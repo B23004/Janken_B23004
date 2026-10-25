@@ -1,7 +1,11 @@
+Board board;
 void setup() {
-  size(400, 400);
+  surface.setSize(450, 300);
+  board = new Board();
+  background(0);
 }
 
 void draw() {
-  background(255);
+  board.updateSelectArea();
+  board.updateCommentArea("Choose Your Hand");
 }
